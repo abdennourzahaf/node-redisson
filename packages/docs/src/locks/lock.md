@@ -51,7 +51,7 @@ await lock2.lock();
 
 const lock3 = redisson.getLock('Example:ReentrantLock');
 // ❌ The lock is waiting and cannot be acquired temporarily because the lock has been acquired by other clients
-await lock2.lock();
+await lock3.lock();
 ```
 
 ### Final Release
